@@ -1,6 +1,6 @@
 """
-** @author David Nilsson - Prime Fitness Studio AB **
-** 2023-04-10 - Deep Learning 7,5 credits----------**
+author David Nilsson - Prime Fitness Studio AB
+2023-04-10 - Deep Learning 7,5 credits
 """
 
 
