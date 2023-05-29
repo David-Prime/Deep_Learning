@@ -64,7 +64,7 @@ def build_model(hp):
     learning_rate = hp.Float("lr", min_value=1e-4, max_value=1e-2, sampling="log")
     model.compile(
         optimizer=keras.optimizers.Adam(learning_rate=learning_rate),
-        loss="sparse_categorical_crossentropy",
+        loss="categorical_crossentropy",
         metrics=["accuracy"],
     )
     return model
@@ -244,7 +244,7 @@ model.summary()
 # Compiling the model, as a preparation for training
 model.compile(
   optimizer='adam',                    # Tried: adam, sgd
-  loss='sparse_categorical_crossentropy',      # sparse_categorical_crossentropy
+  loss='categorical_crossentropy',      # sparse_categorical_crossentropy
   metrics=['accuracy']              # categorical_accuracy
 )
 
